@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6D28D9, #A855F7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sentence, .translated-sentence {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.input-field {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: calc(100% - 24px);
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #6D28D9;
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.check-button {
+    background-color: #38BDF8;
+}
+
+.check-button:hover {
+    background-color: #0EA5E9;
+    transform: scale(1.05);
+}
+
+.next-button {
+    background-color: #6D28D9;
+}
+
+.next-button:hover {
+    background-color: #4C1D95;
+    transform: scale(1.05);
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+}

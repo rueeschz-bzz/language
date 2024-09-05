@@ -3,48 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sprachen Lernen</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Sprachlern-Tool</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="container">
-  <header>
-    <h1>Sprachen lernen mit Lückentexten</h1>
-  </header>
-  <main>
-    <div class="language-selection">
-      <label for="language">Sprache auswählen: </label>
-      <select id="language">
-        <option value="DE">Deutsch</option>
-        <option value="FR">Französisch</option>
-        <option value="ES">Spanisch</option>
-        <option value="IT">Italienisch</option>
-      </select>
+  <div class="card">
+    <h1>Sprachlern-Tool</h1>
+    <p id="sentence" class="sentence">Working at Andeo is a great experience!</p>
+    <p id="translated-sentence" class="translated-sentence">Bei Andeo zu arbeiten ist eine grossartige ________!</p>
+    <input type="text" id="user-input" class="input-field" placeholder="Deine Antwort hier">
+    <div class="button-group">
+      <button onclick="checkAnswer()" class="button check-button">Überprüfen</button>
+      <button onclick="nextSentence()" class="button next-button">Nächster Satz</button>
     </div>
-
-    <div class="sentence-container">
-      <p id="sentence" class="sentence">
-        <!-- Der Satz wird hier angezeigt -->
-      </p>
-    </div>
-
-    <form id="word-form" class="word-form">
-      <input type="text" id="userInput" class="input-text" placeholder="Füge das fehlende Wort ein">
-      <button type="submit" class="submit-button">Prüfen</button>
-    </form>
-
-    <div class="feedback" id="feedback">
-      <!-- Rückmeldung wird hier angezeigt -->
-    </div>
-
-    <button id="nextSentence" class="next-button">Nächster Satz</button>
-  </main>
-
-  <footer>
-    <p>Entwickelt von deinem Team</p>
-  </footer>
+    <p id="result" class="result"></p>
+  </div>
 </div>
-
-<script src="app.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
