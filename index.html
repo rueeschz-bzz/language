@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sprachen Lernen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Sprachen lernen mit Lückentexten</h1>
+  </header>
+  <main>
+    <div class="language-selection">
+      <label for="language">Sprache auswählen: </label>
+      <select id="language">
+        <option value="DE">Deutsch</option>
+        <option value="FR">Französisch</option>
+        <option value="ES">Spanisch</option>
+        <option value="IT">Italienisch</option>
+      </select>
+    </div>
+
+    <div class="sentence-container">
+      <p id="sentence" class="sentence">
+        <!-- Der Satz wird hier angezeigt -->
+      </p>
+    </div>
+
+    <form id="word-form" class="word-form">
+      <input type="text" id="userInput" class="input-text" placeholder="Füge das fehlende Wort ein">
+      <button type="submit" class="submit-button">Prüfen</button>
+    </form>
+
+    <div class="feedback" id="feedback">
+      <!-- Rückmeldung wird hier angezeigt -->
+    </div>
+
+    <button id="nextSentence" class="next-button">Nächster Satz</button>
+  </main>
+
+  <footer>
+    <p>Entwickelt von deinem Team</p>
+  </footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
